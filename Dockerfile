@@ -2,10 +2,11 @@ FROM ruby:2.2
 MAINTAINER Hannes Schaller <admin@cyberkov.at>
 
 
-ENV OPENHAB_SERVER="localhost" OPENHAB_PORT="7070"
+ENV OPENHAB_SERVER="localhost" \
+    OPENHAB_PORT="7070" \
+    AUTH_TOKEN="openH4b"
 
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev libstdc++6
-#RUN gem install eventmachine -v '1.0.3'
 RUN mkdir /app
 WORKDIR /app
 ADD Gemfile /app/Gemfile

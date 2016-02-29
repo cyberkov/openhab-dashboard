@@ -1,0 +1,14 @@
+---
+dashing:
+  build: .
+  ports:
+    - "3030:3030"
+  volumes:
+    - '/etc/localtime:/etc/localtime:ro'
+    - ".:/app"
+  extra_hosts:
+    - 'openhab:192.168.1.4'
+  environment:
+    - OPENHAB_SERVER=openhab
+    - OPENHAB_PORT=8080
+    - AUTH_TOKEN=unsure_uncap_brimful_crease

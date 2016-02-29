@@ -1,7 +1,7 @@
 require 'dashing'
 
 configure do
-  set :auth_token, 'openH4b'
+  set :auth_token, ENV["AUTH_TOKEN"] || 'openH4b'
   set :default_dashboard, 'default'
 
   helpers do

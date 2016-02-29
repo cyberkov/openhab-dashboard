@@ -11,7 +11,7 @@
     </li>
 
     <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
-      <div data-id="GF_Living" data-view="Ohswitch" data-title="Living Room Lights" data-device="GF_Living"></div>
+      <div data-id="Weather_Temperature" data-view="Ohtemp" data-title="Outside" data-device="Weather_Temperature"></div>
     </li>
 
     <li data-row="1" data-col="6" data-sizex="2" data-sizey="1">
@@ -19,15 +19,15 @@
     </li>
 
     <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="Light_GF_Porch" data-view="Ohswitch" data-title="Front Porch Light" data-device="Light_GF_Porch"></div>
+      <div data-id="Security_Alarmanlage" data-view="Ohtext" data-title="Alarmanlage" data-device="Security_Alarmanlage"></div>
     </li>
 
     <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="GF_Outdoors" data-view="Ohswitch" data-title="Outdoor Lights" data-device="GF_Outdoors"></div>
+      <div data-id="Weather_Forecast_Temp_Min" data-view="Ohtext" data-title="Condition" data-device="Weather_Forecast_Temp_Min"></div>
     </li>
 
     <li data-row="2" data-col="5" data-sizex="1" data-sizey="1">
-      <div data-id="GF_Front" data-view="Ohswitch" data-title="Front Room Lights" data-device="GF_Front"></div>
+      <div data-id="Weather_Humidity" data-view="Ohhumidity" data-title="Luftfeuchte Aussen" data-device="Weather_Humidity"></div>
     </li>
 
     <li data-row="2" data-col="7" data-sizex="2" data-sizey="1">
@@ -42,12 +42,8 @@
       <div data-id="Door_Sensor_UtilityRoom" data-view="Ohalert" data-title="Utility Room Door" data-device="Door_Sensor_UtilityRoom"></div>
     </li>
   
-    <li data-row="3" data-col="3" data-sizex="2" data-sizey="2">
-      <div data-id="camera3" data-view="Cameras" data-title="" style="background-color:transparent; height: 300px !important"></div>
-    </li>
-
-    <li data-row="3" data-col="5" data-sizex="2" data-sizey="2">
-      <div data-id="camera1" data-view="Cameras" data-title="" style="background-color:transparent; height: 300px !important"></div>
+    <li data-row="3" data-col="3" data-sizex="2" data-sizey="1">
+      <div data-id="display_message_text" data-view="Ohtext" data-title="Meldungen" data-device="display_message_text"></div>
     </li>
 
     <li data-row="3" data-col="7" data-sizex="1" data-sizey="1">
@@ -55,21 +51,22 @@
     </li>
 
     <li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="Garage_Door_Status" data-view="Ohalert" data-title="Garage Door" data-device="Garage_Door_Status"></div>
+      <div data-id="UG_Wirtschaftsraum_Therme" data-view="Ohalert" data-title="Heizung" data-device="UG_Wirtschaftsraum_Therme"></div>
     </li>
 
     <li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="CH_Dashboard" data-view="Ohheating" data-title="Heating" data-device="CH_Dashboard" data-suffix="&deg;C"></div>
+      <div data-id="EG_Wohnzimmer_Heating_SET_TEMPERATURE" data-view="Ohheating" data-title="Heating" data-device="EG_Wohnzimmer_Heating_SET_TEMPERATURE" data-suffix="&deg;C"></div>
     </li> 
 
     <li data-row="4" data-col="7" data-sizex="1" data-sizey="1">
-      <div data-id="cpage1" data-view="Changepage" data-icon="arrow-right" data-title="Room Lighting" data-page="2" data-stagger="false" data-fasttransition="true" style="background-color:#085C61"></div>
+      <div data-id="cpage1" data-view="Changepage" data-icon="arrow-right" data-title="Room Info" data-page="2" data-stagger="false" data-fasttransition="true" style="background-color:#085C61"></div>
     </li>
 
 
   </ul>
 </div>
 
+<!-- page 2 -->
 <div class="gridster">
   <ul>
 
@@ -123,3 +120,4 @@
     
  </ul>
 </div>
+<!-- end page 2 -->
