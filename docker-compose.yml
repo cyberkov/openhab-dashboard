@@ -5,6 +5,7 @@ dashing:
     - "3030:3030"
   volumes:
     - '/etc/localtime:/etc/localtime:ro'
+    - '/etc/timezone:/etc/timezone:ro'
     - ".:/app"
   extra_hosts:
     - 'openhab:192.168.1.4'
